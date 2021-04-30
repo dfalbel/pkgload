@@ -1,6 +1,8 @@
 # pkgload (development version)
 
-* Fixed issues when using `load_all()` on rlang.
+* pkgload now forces all bindings on unload. This fixes errors and
+  inconsistencies when dangling references force lazy bindings after
+  unload or reload.
 
 
 # pkgload 1.2.1
