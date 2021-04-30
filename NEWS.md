@@ -1,5 +1,8 @@
 # pkgload (development version)
 
+* Fixed issues when using `load_all()` on rlang.
+
+
 # pkgload 1.2.1
 
 * `unload()` no longer unregisters methods for generics of the package being unloaded. This way dangling references to generics defined in the stale namespace still work as expected (r-lib/vctrs#1341).
